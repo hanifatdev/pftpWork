@@ -1,0 +1,27 @@
+/* Tag references -> Any tag that you define in html file. Just write this tag-name with braces and write the css properties inside the braces. It will automatically apply to this tag.*/
+
+p{
+    color: brown;
+}
+
+h3{
+    color: blueviolet;
+}
+
+/* Class references -> A class that will be define by write a '.' with calss-name then braces in the css file. After that write the css properties inside the braces. The class-name will be call in htmnl element or tag by first deifne the class attribute and write this class-name in this attribute.*/
+
+.div3{
+    padding: 50px;
+    width: 25%;
+    margin: 50px 50px 50px 50px;
+    color: blue; border: 1px;
+    background-color: cornflowerblue;
+}
+
+span{
+    padding: 50px; 
+    margin: 50px; 
+    color: red; 
+    border: 3px; 
+    background-color: bisque;
+}
