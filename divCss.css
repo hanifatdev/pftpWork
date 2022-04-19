@@ -8,6 +8,7 @@ h3{
     color: blueviolet;
 }
 
+
 /* Class references -> A class that will be define by write a '.' with calss-name then braces in the css file. After that write the css properties inside the braces. The class-name will be call in htmnl element or tag by first deifne the class attribute and write this class-name in this attribute.*/
 
 .div3{
@@ -18,7 +19,7 @@ h3{
     background-color: cornflowerblue;
 }
 
-span{
+.spanOptional{
     padding: 50px; 
     margin: 50px; 
     color: red; 
