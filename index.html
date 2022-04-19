@@ -1,297 +1,215 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
-    <head>
-
+<head>
+    <title>Table Lesson</title>
         <!--  CDON version of bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="stylesheet" href="style/css/myStyles.css">
 
-        <!--  External css : A css file with a name like 'anyName.css' will be create saperatly out of html file. In this css file the tag references and class referenses will be define. -->
-        
-        <link rel="stylesheet" href="divCss.css">
+</head>
 
-        <!--  Internal css : In head tag the html element '<style>' is mentioned and inside the <style> element, tag references and class referenses will be define. -->
-        <style>
-            .div2{
-                padding: 50px; 
-                width: 25%; 
-                margin: 50px 50px 50px 50px; 
-                color: red; 
-                border: 3px; 
-                background-color: bisque;
-            }
-
-            div{
-                margin-bottom: 5px;
-            }
-        </style>
-        <a>
-
-        </a>
-    </head>
-    <body>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../my_first_web_page/myPage.html">About me</a>
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">User information</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Education</a>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Link
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Link</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-light" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        <!-- div style="padding: 50px; width: 25%; margin: 50px; color:aliceblue;
-        border: 5px; background-color: lightblue;">Hanif</div>
+<body style="background-color:#FFFFFF;margin:0px;padding: 0px:">
 
 
-        <div class="div2">Mohsin</div>
+<table style="width:100%;" class="tblDesign">
 
-        <div class="div3">Hassan</div>
+    <tr style="background-color: #054ada">
 
+        <td colspan="2" style="padding: 1.5rem;">
 
-        <span style="padding: 20px; margin: 50px; color:aliceblue;
-        border: 5px; background-color: lightblue;">FaizanL</span>    
-        <br><span>Amna</span>    
-        <span>Iram</span>    
-        <br>        <br>
- 
-
-
-        <div style="padding: 50px; width: 25%; margin: 50px;" class="container-fluid">
-            <p class="col-3 bg-success">
-                Web developement
-                <h3 class="text-success">Wen learning</h3>
-            </p>
-         
-        </div --->
-
-
-        <form action="#" class="row g-3 needs-validation" novalidate> 
-
-        <div class="bd-example bd-example-row" style="width: 45%;">
-        <div class="container">
-
-        <fieldset>
-            <legend>Login information</legend>
-            <div class="row">
-                <div class="col">
-                    User name: 
-                </div>
-
-                <div class="col">
-                    <input type="text" name="txtUserName" placeholder="hKhan" value="" id="uname" class="form-control" required>
-
-                    <div class="invalid-feedback">
-                        User name required!
-                    </div>
-        
-                    <!-- div class="valid-feedback"></div -->
-
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    Password: 
-                </div>
-
-                <div class="col">
-                    <input type="password" id="pswrd" name="txtPassword" placeholder="********" value="" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Password required!
-                    </div>
-                </div>
-            </div>
-
-        </fieldset>
-
-
-        <fieldset>
-            <legend>Personal information</legend>
-            <div class="row">
-                <div class="col">
-                    First name: 
-                </div>
-
-                <div class="col">
-                    <input type="text" id="fname" name="txtFirstName" placeholder="Hanif" value="" class="form-control" required>
-                    <div class="invalid-feedback">
-                        First name required!
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    Last name: 
-                </div>
-
-                <div class="col">
-                    <input type="text" id="lname" name="txtLastName" placeholder="Khan" value="" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Last name required!
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    Email: 
-                </div>
-
-                <div class="col">
-                    <input type="text" id="emal" name="txtUserEmail" placeholder="abc@mail.com" value="" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Email required!
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col">
-                    Gender: 
-                </div>
-
-                <div class="col">
-                    <input type="radio" id="rdoMale" name="rdoGender" value="1"> &nbsp; Male
-                    <input type="radio" id="rdoFmale" name="rdoGender" value="2"> &nbsp; Female
-                    <input type="radio" id="rdoNotspecify" name="rdoGender" value="3"> &nbsp; Not specify
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    Citizenship: 
-                </div>
-
-                <div class="col">
-                    <input type="checkbox" id="chk" name="chkCountryPak" value="1" class="form-check-input" required> &nbsp; Pakistan
-                    <input type="checkbox" id="rdoFmale" name="chkCountryGr" value="2"> &nbsp; Greece
-                    <input type="checkbox" id="rdoNotspecify" name="chkCountryDe" value="3"> &nbsp; Germany
-                    <input type="checkbox" id="rdoMale" name="chkCountrySe" value="4"> &nbsp; Sweden
-                    <input type="checkbox" id="rdoMale" name="chkCountryCa" value="5"> &nbsp; Canada
-                    <div class="invalid-feedback">
-                        country required!
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    Swedish Laguage: 
-                </div>
-
-                <div class="col">
-                    <select name="langSkil" id="lang" class="form-select" required>
-                        <option value="">None</option>
-                        <option value="1">Perfesstional</option>
-                        <option value="2">Converciational</option>
-                        <option value="3">Mother tongue</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Language required!
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    Address: 
-                </div>
-
-                <div class="col">
-                    <input type="text" id="Street" name="txtStreetName" placeholder="Kakelvagen" value=""  style="margin-bottom: 10px;" class="form-control" required>
-                    <input type="number" id="houseNumber"name="noStrtNo" placeholder="50" value="" style="margin-bottom: 10px;" class="form-control" required>
-                    <input type="number" id="PostCode"name="noPostNo" placeholder="15155" value="" style="margin-bottom: 10px;"class="form-control" required>
-                    <input type="text" id="City"name="txtStrtNm" placeholder="Sodertalje" value="" style="margin-bottom: 10px;"class="form-control" required>
-                    <div class="invalid-feedback"class="form-control" required>
-                        In address all values are required!
-                    </div>
-                </div>
-            </div>
-
-        </fieldset>
-
-        
-            <div class="row">
-                <div class="col">
-                </div>
-
-                <div class="col">
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                    <input type="reset" value="Clear" class="btn btn-secondary">
-                </div>
-            </div>
-
-
-          </div>
-        </div>
-    </form>
-
-    <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-        var i = 0;
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-            /*alert(form[i])
-            i++;*/
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-            }
-
-            form.classList.add('was-validated')
-        }, false)
-        })
-    })()
-    </script>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="myPage.html">About me</a>
     
-    </body>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+    
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">User information</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                      </li>
+    
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Link</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-light" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            <!-- span style="color: #ffffff; padding-left:80px; padding-right: 500px;" class="headingOne">LEARNIG HTML</span>
+
+            <a href="#"><span class="hyprLnk">SERVICES</span></a>
+            <a href="#"><span class="hyprLnk">CAREER</span></a>
+            <a href="#"><span class="hyprLnk">ABOUT US</span></a>
+            <a href="#"><span class="hyprLnk">BELOG</span></a -->
+
+        </td>
+
+    </tr>
+
+    <tr style="background-color: #eaeaea">
+
+        <td style="width: 60%; padding-top: 3rem; padding-left: 2rem; padding-bottom: 4rem; padding-right: 0rem">
+
+            <table width="95%" style="border: solid 1px #d5d4d4; background-color: #fafafa; border-radius: 5px">
+
+                <tr>
+                    <td style="padding: 20px">
+
+                        <span id="lftPnl" class="aboutMeStyle">About Me</span>
+
+                        <p class="normalTxt">
+
+                            <img src="images/img.png" width="20%" height="20%" style="border-radius: 50%; margin: 0 25px 5px 0;" align="left">
+                            My story,
+                            In 2002 i came to Greece and there was too difficult to find accomodation and get a job but AlhamduLILLAH thuma AlhamduLILLAH i got accomodatiom in first week and than after a few days i got a job.<br/>I was living with bangladeshi brothers and this was a good aparconaty that i can speek bangla, so there i hear every where just bangla, this was good for me also becous i want at prectic more and more.<br/>After like two months i got a living place with Pakistani brother.<br/>And than the start like normal,
+
+                        </p>
+
+                        <br><br>
+
+                        <button id="btnOrang" type="button" onclick="changeTextAndStyle()" class="btnStyle" onmouseover="onMouseOverStyleChang()" onmouseleave="onMouseLeaveBackToStyle()">Click here to change left panel.</button>
+
+                        <br><br>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </td>
+
+        <td style="width: 40%"class="tableData2" valign="top">
+
+            <table class="tblListStyle">
+
+                <tr>
+
+                    <td style="padding: 20px;">
+                        <span class="mySkillsStyle">My Skills</span>
+
+                        <h2 class="skillsHeadigStyle">Technical Skills</h2>
+
+                        <ul class=skillsListStyle>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+
+                        <h2 class="skillsHeadigStyle">Persnol Skills</h2>
+
+                        <ol class="skillsListStyle">
+                            <li>SOCIAL</li>
+                            <li>COMUNICATIVE</li>
+                            <li>INNOVATIVE</li>
+                        </ol>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+            <table class="tblListStyle" style="margin: 20px 0 10px 0;">
+
+                <tr>
+
+                    <td style="padding: 20px;">
+                        <span class="mySkillsStyle">Expirians</span>
+
+                        <h2 class="skillsHeadigStyle">Web Devolepment</h2>
+
+                        <dl class="skillsListStyle">
+                            <dt>HTML</dt>
+                            <dd>I have used the html tables to devolep a personal web page</dd>
+                            <dt>CSS</dt>
+                            <dd>I have used CSS to define css classes for the personal web page</dd>
+                        </dl>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+
+        </td>
+
+    </tr>
+
+    <tr style="background-color: #2d3956">
+
+        <td colspan="2" style="padding-top: 1rem; padding-left: 6rem; padding-bottom: 3rem; padding-right:0rem">
+
+            <table border="1" width="90%">
+
+                <tr>
+
+                    <td>
+                        <span style="color: #FFFFFF; font-size: larger; padding-right: 41.50rem; " class="headingOne">HOME TECH</span>
+
+
+                         <span style="color: #fafafa; font-family:sans-serif;">Company</span>
+                         <span style="color: #fafafa; font-family: sans-serif; padding-left: 90px;">Services</span>
+                         <span style="color: #fafafa;font-family: sans-serif; padding-left: 90px;">Resources</span>
+
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+        </td>
+
+    </tr>
+
+</table>
+
+<script>
+
+    function changeTextAndStyle() {
+        document.getElementById("lftPnl").innerHTML = "Left panel";
+        document.getElementById("lftPnl").className = "lftPnlTxt";
+    }
+
+    function onMouseOverStyleChang() {
+        document.getElementById("btnOrang").className = "btnStyleOnMousOver";
+    }
+
+    function onMouseLeaveBackToStyle() {
+        document.getElementById("btnOrang").className = "btnStyle";
+    }
+
+</script>
+
+</body>
 </html>
